@@ -1,0 +1,14 @@
+The solution uses flexbox for reliable layout:
+
+```css
+div {
+  width: 50%;
+  box-sizing: border-box; /* Ensures padding and border are included in the width calculation */
+  flex: 1 0 50%; /* Ensures each div takes up 50% width, but is also flexible */
+}
+.container {
+  display: flex;
+}
+```
+
+This approach avoids the inconsistencies associated with floating elements and percentage widths, providing a more predictable and consistent layout across various browsers.
