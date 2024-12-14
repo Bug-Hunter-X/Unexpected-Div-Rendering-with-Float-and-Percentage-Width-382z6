@@ -1,0 +1,10 @@
+The following CSS code results in unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This code intends to make two divs occupy 50% of the container width each and sit side by side. However, if the container's width is not an even multiple of the div's width, some browsers might render the divs incorrectly, leading to extra space or overlapping.
